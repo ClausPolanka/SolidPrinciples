@@ -40,6 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DIP\Customer.cs" />
+    <Compile Include="DIP\HtmlSerializer.cs" />
+    <Compile Include="DIP\ResponseKind.cs" />
+    <Compile Include="DIP\ResponseWriter.cs" />
+    <Compile Include="DIP\XmlSerializer.cs" />
     <Compile Include="LSP\FinbonacciNumberGenerator.cs" />
     <Compile Include="LSP\FinbonacciNumberGeneratorWithHistory.cs" />
     <Compile Include="OCP\FibonacciNumberGenerator.cs" />
