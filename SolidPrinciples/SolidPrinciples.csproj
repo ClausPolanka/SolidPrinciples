@@ -45,6 +45,9 @@
     <Compile Include="DIP\ResponseKind.cs" />
     <Compile Include="DIP\ResponseWriter.cs" />
     <Compile Include="DIP\XmlSerializer.cs" />
+    <Compile Include="ISP\Book.cs" />
+    <Compile Include="ISP\BookStats.cs" />
+    <Compile Include="ISP\Library.cs" />
     <Compile Include="LSP\FinbonacciNumberGenerator.cs" />
     <Compile Include="LSP\FinbonacciNumberGeneratorWithHistory.cs" />
     <Compile Include="OCP\FibonacciNumberGenerator.cs" />
