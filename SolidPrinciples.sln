@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples", "SolidPrinciples\SolidPrinciples.csproj", "{40E5FCFE-9580-4370-9429-C0C2A8ED920C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples.UnitTests", "SolidPrinciples.UnitTests\SolidPrinciples.UnitTests.csproj", "{835F24AC-6037-4AED-B4CB-67B566D15278}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{40E5FCFE-9580-4370-9429-C0C2A8ED920C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40E5FCFE-9580-4370-9429-C0C2A8ED920C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40E5FCFE-9580-4370-9429-C0C2A8ED920C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{835F24AC-6037-4AED-B4CB-67B566D15278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{835F24AC-6037-4AED-B4CB-67B566D15278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{835F24AC-6037-4AED-B4CB-67B566D15278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{835F24AC-6037-4AED-B4CB-67B566D15278}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
