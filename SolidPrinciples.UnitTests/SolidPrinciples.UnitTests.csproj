@@ -45,9 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitTests\LSP\FibonacciNumberGeneratorTest.cs" />
-    <Compile Include="UnitTests\LSP\FibonacciNumberGeneratorWithHistoryTest.cs" />
-    <Compile Include="UnitTests\SRP\BankTransferTest.cs" />
+    <Compile Include="LSP\FibonacciNumberGeneratorTest.cs" />
+    <Compile Include="LSP\FibonacciNumberGeneratorWithHistoryTest.cs" />
+    <Compile Include="SRP\BankTransferTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -59,7 +59,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UnitTests\OCP\" />
+    <Folder Include="OCP\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
