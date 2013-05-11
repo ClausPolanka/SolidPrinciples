@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LSP\FinbonacciNumberGenerator.cs" />
+    <Compile Include="LSP\FinbonacciNumberGeneratorWithHistory.cs" />
     <Compile Include="OCP\FibonacciNumberGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SRP\BankAccount.cs" />
