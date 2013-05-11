@@ -1,5 +1,6 @@
 namespace SolidPrinciples.DIP
 {
+
     public class HtmlSerializer
     {
         public string SerializeToHtml(Customer customer)
