@@ -2,7 +2,7 @@ using System;
 using NUnit.Framework;
 using SolidPrinciples.LSP;
 
-namespace SolidPrinciples.UnitTests.UnitTests.LSP
+namespace SolidPrinciples.UnitTests.LSP
 {
     [TestFixture]
     public class FibonacciNumberGeneratorWithHistoryTest
