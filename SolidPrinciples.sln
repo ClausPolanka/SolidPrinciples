@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples", "SolidPri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples.UnitTests", "SolidPrinciples.UnitTests\SolidPrinciples.UnitTests.csproj", "{835F24AC-6037-4AED-B4CB-67B566D15278}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListeningToTheTests", "ListeningToTheTests\ListeningToTheTests.csproj", "{F68E8F3C-98E9-4C7A-B887-FA35B03E4B73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{835F24AC-6037-4AED-B4CB-67B566D15278}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{835F24AC-6037-4AED-B4CB-67B566D15278}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{835F24AC-6037-4AED-B4CB-67B566D15278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F68E8F3C-98E9-4C7A-B887-FA35B03E4B73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F68E8F3C-98E9-4C7A-B887-FA35B03E4B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F68E8F3C-98E9-4C7A-B887-FA35B03E4B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F68E8F3C-98E9-4C7A-B887-FA35B03E4B73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
