@@ -1,0 +1,81 @@
+﻿using System;
+using NUnit.Framework;
+
+using System;
+
+namespace ListeningToTheTests.FirstExample
+{
+    public class Receiver
+    {
+        private DateTime? dateOfFirstRequest;
+        private Clock clock;
+
+        public Receiver(Clock clock)
+        {
+            this.clock = clock;
+        }
+
+        public virtual bool AcceptRequest(Request request)
+        {
+            var now = clock.Now();
+            
+            if (dateOfFirstRequest == null)
+            {
+                dateOfFirstRequest = now;
+            }
+            else if (FirstDateIsDifferentFrom(now))
+            {
+                return false;
+            }
+
+            // Process request here...
+            
+            return true;
+        }
+
+        private bool FirstDateIsDifferentFrom(DateTime now)
+        {
+            return dateOfFirstRequest != now;
+        }
+    }
+}
+
+namespace ListeningToTheTests.FirstExample
+{
+    [TestFixture]
+    public class ReceiverTest
+    {
+        private const Request FIRST_REQUEST = null;
+        private const Request SECOND_REQUEST = null;
+        private DateTime TODAY = new DateTime(2013, 05, 14);
+        private DateTime TOMORROW = new DateTime(2013, 05, 15);
+
+        [Test]
+        public void RejectsRequestsNotWithinTheSameDay()
+        {
+            var clockStub = new ClockStub();
+            clockStub.SetNextDate(TODAY);
+
+            var sut = new Receiver(clockStub);
+            sut.AcceptRequest(FIRST_REQUEST);
+
+            clockStub.SetNextDate(TOMORROW);
+            Assert.False(sut.AcceptRequest(SECOND_REQUEST), "too late now");
+        }
+    }
+
+    public class ClockStub : Clock
+    {
+        private DateTime nextDate;
+
+        public DateTime Now()
+        {
+            return nextDate;
+        }
+
+        public void SetNextDate(DateTime date)
+        {
+            nextDate = date;
+        }
+    }
+}
