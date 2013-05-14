@@ -23,7 +23,7 @@ namespace SolidPrinciples.SRP
 
         public string GetAccountNumber()
         {
-            return null;
+            return accountNumber;
         }
 
         public double GetAmount()

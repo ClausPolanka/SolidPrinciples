@@ -1,3 +1,6 @@
+using System;
+using System.Globalization;
+
 namespace SolidPrinciples.SRP
 {
     public class BankTransfer
@@ -21,7 +24,7 @@ namespace SolidPrinciples.SRP
 
         public string ToXml()
         {
-            return "<BankTransfer amount='" + amount.ToString() + "'>" +
+            return "<BankTransfer amount='" + string.Format(new CultureInfo("en"), "{0:0.0}", amount) + "'>" +
                    "<Payer>" + payer.GetAccountNumber() + "</Payer>" +
                    "<Payee>" + payee.GetAccountNumber() + "</Payee>" +
                    "</BankTransfer>";
