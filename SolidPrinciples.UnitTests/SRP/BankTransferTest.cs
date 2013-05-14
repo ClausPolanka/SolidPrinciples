@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using SolidPrinciples.SRP;
 
-namespace SolidPrinciples.UnitTests.UnitTests.SRP
+namespace SolidPrinciples.UnitTests.SRP
 {
     [TestFixture]
     public class BankTransferTest
