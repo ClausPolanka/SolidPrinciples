@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DIP\ResponseWriterTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LSP\FibonacciNumberGeneratorTest.cs" />
     <Compile Include="LSP\FibonacciNumberGeneratorWithHistoryTest.cs" />
@@ -59,7 +60,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DIP\" />
     <Folder Include="ISP\" />
     <Folder Include="OCP\" />
   </ItemGroup>
