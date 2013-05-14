@@ -9,7 +9,7 @@ namespace ListeningToTheTests.FirstExample
         private const Request SECOND_REQUEST = null;
 
         [Test]
-        public void RejectsTheTestNotWithinTheSameDay()
+        public void RejectsRequestsNotWithinTheSameDay()
         {
             var sut = new Receiver();
             sut.AcceptRequest(FIRST_REQUEST);
