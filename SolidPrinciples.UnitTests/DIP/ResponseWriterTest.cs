@@ -20,7 +20,7 @@ namespace SolidPrinciples.UnitTests.DIP
         public void CreateXmlResponseForCustomer()
         {
             var customer = new Customer { Name = "Name1" };
-            string response = new ResponseWriter().CreateResponse(customer, null);
+            string response = new ResponseWriter().CreateResponse(customer, responseKind: null);
             Assert.That(response, Is.StringContaining("<customer>"), "response format");
             Assert.That(response, Is.StringContaining("Name1"), "response");
         }
